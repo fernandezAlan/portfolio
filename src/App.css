@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto&family=Roboto+Condensed:wght@300&display=swap');
+*{
+    font-family: 'Montserrat';
+}
+.navbar{
+   display: flex;
+   justify-content: space-around;
+}
+.options{
+    width:300px ;
+    font-family: 'Roboto';
+    color: white;
+    background-color: transparent;
+    border: 0px;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+h1{
+    font-family: 'Roboto';
+    margin: 0;
+}
+h1,h2,h3,body{
+    margin: 0;
+}
+
+h2{
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-size: 40px;
+}
+h3{
+    color: white;
+    font-family: 'Montserrat';
+     font-size: 36px;
+}
+.principal_title{
+    font-size: 64px;
+    color:white
+}
+.App{
+    background-image: url(../public/principal_background.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
+}
+.content_wrap{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.title_container{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+        background-size: cover;
+        color: white;
+        z-index: 1;
+        width: 50vw;
+        height: 100vh;
+        bottom: 100vh;
+        position: sticky;
+        left: 50%;
+        background-color: rgb(0 0 0 / 15%);
+        backdrop-filter: blur(10px);
+        filter: blur(-16px);
+        box-shadow: -2px 4px 118px 23px rgb(0 0 0 / 41%);
+}
+.about_wrap{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 30% 25% 25% 20%;
+    width: 100%;
+    height: 100%;
+}
+.about_header > h2{
+   font-family: 'Roboto';
+   font-size: 48px;
+   font-weight: bold;
+}
+.about_header > p{
+    font-size: 20px;
+    padding-bottom: 20px;
+ }
+.about_header{
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: end;
+    width: 100%;
+    height: 100%;
+}
+
+.about_profile_img{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 80px;
+    margin-left: 50px;
+    height: 100%;
+    background-image: url(../public/profile_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(1);
+}
+.about_studies{
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 20px;
+}
+.about_bootcamp{
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 10% 30% 60%;
+    grid-template-rows: 90% 10%;
+}
+.about_bootcamp > img {
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.about_bootcamp > span {
+    grid-column-start: 3;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-style: italic;
+}
+.about_experiencie{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 4;
+    font-size: 20px;
+    padding: 20px;
+}
