@@ -3,8 +3,11 @@
     font-family: 'Montserrat';
 }
 .navbar{
-   display: flex;
-   justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
 }
 .options{
     width:300px ;
@@ -38,20 +41,22 @@ h3{
     font-size: 64px;
     color:white
 }
-.App{
-    background-image: url(../public/principal_background.jpg);
-    background-size: cover;
+img{
     width: 100vw;
     height: 100vh;
     z-index: 0;
     position: absolute;
+    object-fit: cover;
 }
 .content_wrap{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
 }
 .title_container{
     margin-top:50px;

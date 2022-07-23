@@ -1,0 +1,45 @@
+section{
+    color: white;
+    z-index: 1;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    background-blend-mode: lighten;
+    box-shadow: 50px 4px 130px #000000;
+    backdrop-filter: blur(8px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7% 30% 23% 40%;
+    grid-template-areas: 
+    "header header header"
+    "exp exp exp"
+    "skills skills skills"
+    "frontend backend other"
+    ;
+}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    grid-area: exp;
+    padding: 20px;
+}
+h2{
+    grid-area: skills;
+    font-family: 'Roboto';
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+}
+div > span {
+    font-family: 'Roboto condensed';
+    padding-left: 35px;
+}
+ul{
+    padding-left: 50px;
+}
