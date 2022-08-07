@@ -1,5 +1,5 @@
 import "./App.css";
-import Experience from "./components/Experience/Experience";
+import ContacMe from "./components/ContacMe/ContacMe";
 function App() {
   return (
     <div>
@@ -18,8 +18,7 @@ function App() {
         <h3>2 años de experiencia en desarrollo web</h3>
       </div>
       */}
-
-      <Experience />
+      <ContacMe />
     </div>
   );
 }
